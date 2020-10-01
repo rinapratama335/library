@@ -21,9 +21,10 @@ const LandingPage = () => {
 
   let history = useHistory();
 
-  const { email, password } = formData;
+  const { email, password, fullName, phone, address } = formData;
 
   const [open, setOpen] = useState(false);
+  const [rgOpen, setRgOpen] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,6 +39,11 @@ const LandingPage = () => {
     } else {
       console.log("LOGIN GAGAL");
     }
+  };
+
+  const handleRgSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
   };
 
   return (
@@ -68,12 +74,78 @@ const LandingPage = () => {
               Sign In
             </button>
 
-            <button href="#about" className="button button-register">
-              Reigister
+            <button
+              href="#about"
+              className="button button-register"
+              onClick={() => setRgOpen(true)}
+            >
+              Register
             </button>
           </Shake>
         </div>
       </div>
+
+      {/* Modal Register */}
+      <Modal
+        open={rgOpen}
+        onClose={() => setRgOpen(false)}
+        center
+        classNames={{
+          modal: "customRgModal",
+        }}
+      >
+        <h2>Sign Up</h2>
+        <form className="form-login" onSubmit={(e) => handleRgSubmit(e)}>
+          <input
+            type="email"
+            placeholder="Input email......."
+            className="input-login"
+            name="email"
+            value={email}
+            onChange={(e) => handleChange(e)}
+          />
+          <input
+            type="password"
+            placeholder="Input password......."
+            className="input-login"
+            name="password"
+            value={password}
+            onChange={(e) => handleChange(e)}
+          />
+          <input
+            type="text"
+            placeholder="Full Name......."
+            className="input-login"
+            name="fullName"
+            value={fullName}
+            onChange={(e) => handleChange(e)}
+          />
+          <input
+            type="number"
+            placeholder="Phon number......."
+            className="input-login"
+            name="phone"
+            value={phone}
+            onChange={(e) => handleChange(e)}
+          />
+          <textarea
+            placeholder="Input address......."
+            className="input-login"
+            name="address"
+            value={address}
+            onChange={(e) => handleChange(e)}
+          />
+
+          <button type className="btn-submit">
+            Submit
+          </button>
+        </form>
+        <div className="regis-link">
+          <p>
+            Don't have an account? Click <Link>here</Link>
+          </p>
+        </div>
+      </Modal>
 
       {/* Modal Login */}
       <Modal
@@ -109,7 +181,7 @@ const LandingPage = () => {
         </form>
         <div className="regis-link">
           <p>
-            Don't have an account? Click <Link>here</Link>
+            Already have an account? Click <Link>here</Link>
           </p>
         </div>
       </Modal>

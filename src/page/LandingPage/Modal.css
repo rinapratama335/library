@@ -6,6 +6,14 @@
   border-radius: 25px;
 }
 
+.customRgModal {
+  background: #b2dbbf;
+  max-width: 500px;
+  width: 100%;
+  height: 70%;
+  border-radius: 25px;
+}
+
 .form-login {
   display: flex;
   flex-direction: column;

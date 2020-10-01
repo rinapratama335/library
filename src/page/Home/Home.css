@@ -1,0 +1,149 @@
+.container {
+  margin: 45px 100px 60px 75px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user img {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+}
+
+.user h4 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.devider {
+  border-bottom-width: 1px;
+  border-bottom-color: #000;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.menu ul li:hover {
+  background-color: #ee4622;
+  border-radius: 20px;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.link {
+  margin-left: 15px;
+  color: #000;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.link-logout {
+  border: none;
+  background-color: transparent;
+  margin-left: 7px;
+}
+
+.link-logout:hover {
+  border: none;
+  background-color: #ee4622;
+  margin-left: 7px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Content */
+
+/* Jumbotron */
+
+.book-title {
+  padding-left: 78px;
+}
+
+.book-title p {
+  font-size: 24px;
+}
+
+.jumbotron-title {
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.jumbotron-img {
+  height: 386px;
+  width: 265px;
+  margin: 5s0px;
+}
+
+/* List Category Book */
+.list-book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.list-title {
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.list-title h3 {
+  font-size: 36px;
+  margin-right: 45px;
+}
+
+.list-link {
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.btn-list {
+  background-color: #ee4622;
+  padding: 13px 45px;
+  color: #fff;
+  float: right;
+}
+
+/* Book List */
+.book-list {
+  margin-top: 45px;
+}
+
+.book-category {
+  width: 250px;
+  height: 330px;
+}
+
+.title h2 {
+  margin-top: 18px;
+  font-size: 24px;
+  max-width: 200px;
+}
+
+.author p {
+  font-size: 18px;
+  color: #929292;
+  margin-top: 15px;
+}

@@ -1,0 +1,60 @@
+.landing-wrapper {
+  height: 100vh;
+}
+
+.landing-container {
+  background-image: url("../../assets/images/Landing.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  padding-left: 4rem;
+}
+
+.logo {
+  margin-top: 45px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 70px;
+  max-width: 500px;
+}
+
+.gold {
+  color: #fba70b;
+}
+
+.paragraph {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.button-sign-in {
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 25px;
+  background-color: #fba70b;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.button-register {
+  margin-left: 25px;
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 25px;
+  background-color: #0a3179;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: #f1556a;
+  cursor: pointer;
+}

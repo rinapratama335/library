@@ -1,13 +1,22 @@
 import React from "react";
-import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./page/LandingPage/LandingPage";
+import Home from "./page/Home/Home";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <LandingPage />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/home" component={Home} />
+        </Switch>
+      </Router>
+      {/* <LandingPage /> */}
+      {/* <Login /> */}
     </div>
   );
-}
+};
 
 export default App;

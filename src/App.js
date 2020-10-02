@@ -12,6 +12,7 @@ import Profile from "./page/ProfilePage/Profile";
 import MyLibrary from "./page/MyLibraryPage/MyLibrary";
 import AddBook from "./page/AddBookPage/AddBook";
 import Sidebar from "./component/Sidebar";
+import ReadBook from "./page/DetailBookPage/ReadBook";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={LandingPage} />
+            <PrivateRoute exact path="/readbook" component={ReadBook} />
             <div className="container">
               <Grid>
                 <Grid.Row>

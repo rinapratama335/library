@@ -1,0 +1,64 @@
+.detail-img {
+  width: 400px;
+  height: 540px;
+}
+
+.detail-info h1 {
+  font-size: 60px;
+  margin-bottom: 7px;
+}
+
+.detail-info h4 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.author {
+  color: #929292;
+}
+
+.isbn {
+  color: #ee4622;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.about {
+  font-size: 36px;
+  padding-top: 67px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 35px;
+  color: #929292;
+}
+
+.btn-desc {
+  margin-top: 35px;
+}
+
+.btn {
+  padding: 13px 42px;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #f1556a;
+  color: #fff;
+}
+
+.btn-orange {
+  background-color: #ee4622;
+  margin-right: 7px;
+  color: #fff;
+}
+
+.btn-gray {
+  background-color: #929292;
+  margin-left: 8px;
+  color: #000;
+}

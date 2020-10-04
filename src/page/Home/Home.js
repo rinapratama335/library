@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { LibraryContex } from "../../context/libraryContext";
-import { Grid, Icon, Segment, Responsive } from "semantic-ui-react";
+import { Grid, Segment, Responsive } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { Logo, User } from "../../assets/images";
 import "./Home.css";
 import { Fix } from "../../assets/images/book";
 

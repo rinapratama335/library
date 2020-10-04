@@ -1,0 +1,44 @@
+.container {
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.approve {
+  color: #0acf83;
+}
+
+.cancel {
+  color: #ff0000;
+}
+
+.waiting {
+  color: #f7941e;
+}
+
+.btn-action {
+  border: none;
+  padding: 7px 22px;
+  border-radius: 5px;
+}
+
+.btn-action:hover {
+  background-color: #ff6347;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background-color: #0acf83;
+}
+
+.btn-cancel {
+  margin-left: 12%;
+  background-color: #ff0000;
+  margin-right: 22px;
+}

@@ -13,6 +13,7 @@ import MyLibrary from "./page/MyLibraryPage/MyLibrary";
 import AddBook from "./page/AddBookPage/AddBook";
 import Sidebar from "./component/Sidebar";
 import ReadBook from "./page/DetailBookPage/ReadBook";
+import AdminPage from "./page/AdminPage/AdminPage";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <PrivateRoute exact path="/readbook" component={ReadBook} />
+            <PrivateRoute exact path="/admin" component={AdminPage} />
             <div className="container">
               <Grid>
                 <Grid.Row>

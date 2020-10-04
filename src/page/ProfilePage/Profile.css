@@ -3,6 +3,11 @@
   background-color: #fdede6;
 }
 
+.profile-title {
+  font-weight: bold;
+  font-size: 36px;
+}
+
 .item {
   margin-top: 25px;
   display: flex;
